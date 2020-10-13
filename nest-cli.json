@@ -1,6 +1,17 @@
 {
 	"collection": "@nestjs/schematics",
 	"sourceRoot": "src",
+	"projects": {
+		"fibonacci-stream-validator": {
+			"type": "library",
+			"root": "libs/fibonacci-stream-validator",
+			"entryFile": "index",
+			"sourceRoot": "libs/fibonacci-stream-validator/src",
+			"compilerOptions": {
+				"tsConfigPath": "libs/fibonacci-stream-validator/tsconfig.lib.json"
+			}
+		}
+	},
 	"compilerOptions": {
 		"webpack": true
 	}
